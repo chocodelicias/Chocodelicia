@@ -1,0 +1,311 @@
+
+/* General Reset and Body */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fff;
+    color: #fff;
+    line-height: 1.6;
+    font-size: 16px;
+    padding: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* Header */
+header {
+    background-color: #8d81c8;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0 4px 10px #8d81c898;
+}
+
+.encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.logo img {
+    max-width: 180px;
+}
+
+.enlace-paginas .menu {
+    display: flex;
+    list-style: none;
+    gap: 35px;
+}
+
+.enlace-paginas .menu li {
+    display: inline;
+}
+
+.enlace-paginas .menu li a {
+    text-decoration: none;
+    color: #fff; /* Dark Pink */
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.enlace-paginas .menu li a:hover {
+    color: #ffe8c5; /* Slightly darker pink */
+}
+
+.buscador form {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    border-radius: 30px;
+    padding: 5px 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.buscador input[type="search"] {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    width: 220px;
+    transition: width 0.3s ease;
+}
+
+.buscador input[type="search"]:focus {
+    width: 300px;
+}
+
+.buscador .boton-search {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.carrito {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.carrito img {
+    width: 30px;
+    height: 30px;
+}
+
+.carrito .contenido {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.carrito .number {
+    background-color: #ffe8c5;
+    color: #8d81c8;
+    padding: 5px 10px;
+    border-radius: 50%;
+}
+/* Section Lema */
+#lema {
+    background-color: #fff;
+    padding: 150px 0px 50px 0px;
+    text-align: center;
+    color: #8d81c8;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Formulario */
+form {
+    max-width: 500px;
+    margin: 20px auto;
+    color: #8d81c8;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+form input[type="text"], form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+form input[type="submit"] {
+    background-color: #e96998;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form input[type="submit"]:hover {
+    background-color: #e96998;
+}
+
+/* Footer */
+footer {
+    background-color: #fcebd3;
+    padding: 60px 20px;
+    margin-top: 60px;
+    color: #8d81c8;
+    text-align: center;
+}
+
+.redes sociales .contenido {
+    margin-top: 40px;
+}
+
+.redes sociales a {
+    margin: 0 20px;
+}
+
+.redes sociales img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.redes sociales img:hover {
+    transform: scale(1.1);
+}
+
+.informacion .contenido {
+    display: flex;
+    color: #666;
+    justify-content: space-between;
+    margin-top: 40px;
+    gap: 40px;
+}
+
+.info-contacto ul {
+    list-style-type: none;
+}
+
+.info-contacto li {
+    margin-bottom: 15px;
+}
+
+.info-contacto h4 {
+    font-size: 1.3rem;
+    color: #8d81c8;
+    margin-bottom: 15px;
+}
+
+.info-legal  ul {
+    list-style-type: none;
+}
+
+.info-legal li {
+    margin-bottom: 15px;
+}
+
+.info-legal h4 {
+    font-size: 1.3rem;
+    color: #8d81c8;
+    margin-bottom: 15px;
+}
+.boletin-info {
+    max-width: 320px;
+    text-align: left;
+}
+
+.boletin-info {
+    margin-bottom: 15px;
+    color: #777;
+}
+.boletin-info h4 {
+    font-size: 1.3rem;
+    color: #8d81c8;
+    margin-bottom: 15px;
+}
+
+.boletin-info button {
+    background-color: #8d81c8;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.boletin-info button:hover {
+    background-color: #ffe8c5;
+}
+
+.pagos img {
+    width: 100%;
+    max-width: 350px;
+    margin-top: 40px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Footer Copyright */
+footer .contenido p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .encabezado {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo img {
+        max-width: 150px;
+    }
+
+    .enlace-paginas .menu {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .choco {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Sub.choco {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    #lema h1 {
+        font-size: 2.2rem;
+    }
+
+    .info-contacto, .info-legal, .boletin-info {
+        width: 100%;
+    }
+
+    .informacion .contenido {
+        flex-direction: column;
+        align-items: center;
+    }
+}
